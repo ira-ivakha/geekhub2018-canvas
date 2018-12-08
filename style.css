@@ -1,0 +1,75 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+canvas {
+  display: block;
+}
+#wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200%;
+  display: block;
+  width: 100%;
+  -webkit-user-select: none;
+  user-select: none;
+}
+#pluto {
+  top: 80vh;
+  left: 50vw;
+  background-image: url(pluto.png);
+  height: 100px;
+  width: 100px;
+  background-size: 100%;
+}
+#jupiter {
+  top: 0 ;
+  left: 0;
+  /*position: absolute;*/
+  background-image: url(jupiter.png);
+  height: 300px;
+  width: 300px;
+  background-size: 100%;
+}
+#earth {
+  top: 60vh;
+  left: 50vw;
+  background-image: url(earth.png);
+  height: 350px;
+  width: 350px;
+  background-size: 110%;
+}
+.background {
+  opacity: 1;
+  background-image: url(galaxy.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  font-size: 5vh;
+  color: white;
+  text-transform: uppercase;
+}
+
+/*.foreground {*/
+  /*opacity: 0;*/
+  /*transition: opacity 0.5s ease;*/
+/*}*/
+
+/*.foreground.animated {*/
+  /*opacity: 1;*/
+/*}*/
